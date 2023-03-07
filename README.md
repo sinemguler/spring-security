@@ -35,6 +35,6 @@
 }`
 
 **Signature (İmza)**
-*JWT’nin onaylanmasından imza sorumludur. Signature kısmınının oluşması için, base64 ile encodlanmış header, base64 ile encodlanmış payload ve belirlenen bir secret key’ e gereklidir. Sonrasında imza oluşturmak için header’da tanımlanan hashleme algoritması kullanılır.*
+*JWT’nin onaylanmasından imza sorumludur. Signature kısmınının oluşması için, base64 ile encodlanmış header, base64 ile encodlanmış payload ve belirlenen bir secret key gereklidir. Sonrasında imza oluşturmak için header’da tanımlanan hashleme algoritması kullanılır.*
 
 `HMACSHA256(base64UrlEncode(header) + “.” + base64UrlEncode(payload), secret)`
