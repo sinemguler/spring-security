@@ -46,10 +46,12 @@ The token produced with JWT consists of 3 main parts encoded with Base64. These 
 
 **Header**
 *This part to be used in JWT is written in JSON format and consists of 2 fields. These are the token type and the name of the algorithm to be used for signing.*
+
 `{
   "alg": "HS256",
   "typ": "JWT"
 }`
+
 *Many different algorithms such as HS256, HMAC SHA256 or RSA can be used in the algorithm part. In the Type section, it says JWT. This part is encoded with Base64 and forms the first part of the token to be created.*
 
 **Payload** 
